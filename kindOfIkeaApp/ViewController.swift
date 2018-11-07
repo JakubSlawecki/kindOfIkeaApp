@@ -7,12 +7,40 @@
 //
 
 import UIKit
+import ARKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    let itemsArray: [String] = ["Cup", "Vase", "Boxing", "Table", "Beaver"]
+    @IBOutlet weak var itemsCollectionsView: UICollectionView!
+    @IBOutlet weak var sceneView: ARSCNView!
+    let configuration = ARWorldTrackingConfiguration()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
+        self.sceneView.session.run(configuration)
+        self.itemsCollectionsView.dataSource = self
+        self.itemsCollectionsView.delegate = self
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return itemsArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as! itemCell
+        cell.itemLabel.text = self.itemsArray[indexPath.row]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.backgroundColor = UIColor.darkGray
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.backgroundColor = UIColor.lightGray
     }
 
 
