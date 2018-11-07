@@ -13,6 +13,7 @@
 		2336A38321935E37000F822D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2336A38221935E37000F822D /* Assets.xcassets */; };
 		2336A38621935E37000F822D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336A38421935E37000F822D /* LaunchScreen.storyboard */; };
 		2336A38E2193659D000F822D /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336A38D2193659D000F822D /* itemCell.swift */; };
+		237004B821938F2100BA83D3 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 237004B721938F2100BA83D3 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2336A38521935E37000F822D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2336A38721935E37000F822D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2336A38D2193659D000F822D /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		237004B721938F2100BA83D3 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2336A38221935E37000F822D /* Assets.xcassets */,
 				2336A38421935E37000F822D /* LaunchScreen.storyboard */,
 				2336A38721935E37000F822D /* Info.plist */,
+				237004B721938F2100BA83D3 /* Models.scnassets */,
 			);
 			path = kindOfIkeaApp;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2336A38621935E37000F822D /* LaunchScreen.storyboard in Resources */,
+				237004B821938F2100BA83D3 /* Models.scnassets in Resources */,
 				2336A38321935E37000F822D /* Assets.xcassets in Resources */,
 				2336A38121935E34000F822D /* Main.storyboard in Resources */,
 			);

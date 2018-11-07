@@ -10,7 +10,7 @@ import UIKit
 import ARKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    let itemsArray: [String] = ["Cup", "Vase", "Boxing", "Table", "Beaver"]
+    let itemsArray: [String] = ["Cup", "Vase", "Chair", "Table", "Lamp"]
     @IBOutlet weak var itemsCollectionsView: UICollectionView!
     @IBOutlet weak var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
