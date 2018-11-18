@@ -17,9 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-vo-NpX">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U3-DB-gNv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-vo-NpX">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14589576198630136" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="wyG-ym-sla"/>
                                 </constraints>
@@ -56,18 +59,15 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U3-DB-gNv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="592"/>
-                            </arscnView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t3O-vo-NpX" firstAttribute="top" secondItem="4U3-DB-gNv" secondAttribute="bottom" id="1Bn-ds-thB"/>
                             <constraint firstItem="4U3-DB-gNv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1ho-D8-ppF"/>
                             <constraint firstItem="t3O-vo-NpX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2G6-Kx-7fr"/>
                             <constraint firstItem="4U3-DB-gNv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q17-kG-W3i"/>
                             <constraint firstItem="t3O-vo-NpX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="V6P-6Y-uO9"/>
                             <constraint firstItem="t3O-vo-NpX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qTR-pb-o8a"/>
+                            <constraint firstItem="4U3-DB-gNv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qs5-UU-Iij"/>
                             <constraint firstItem="4U3-DB-gNv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rCn-zq-RRO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
