@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +20,12 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U3-DB-gNv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91D-c4-0tS">
+                                <rect key="frame" x="124" y="552" width="127.5" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-vo-NpX">
                                 <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14589576198630136" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,6 +72,8 @@
                             <constraint firstItem="t3O-vo-NpX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2G6-Kx-7fr"/>
                             <constraint firstItem="4U3-DB-gNv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q17-kG-W3i"/>
                             <constraint firstItem="t3O-vo-NpX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="V6P-6Y-uO9"/>
+                            <constraint firstItem="t3O-vo-NpX" firstAttribute="top" secondItem="91D-c4-0tS" secondAttribute="bottom" constant="15" id="aGy-w2-NfE"/>
+                            <constraint firstItem="91D-c4-0tS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d8e-Px-bIC"/>
                             <constraint firstItem="t3O-vo-NpX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qTR-pb-o8a"/>
                             <constraint firstItem="4U3-DB-gNv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qs5-UU-Iij"/>
                             <constraint firstItem="4U3-DB-gNv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rCn-zq-RRO"/>
@@ -74,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="itemsCollectionsView" destination="t3O-vo-NpX" id="nyK-yN-1sL"/>
+                        <outlet property="planeDetectedLabel" destination="91D-c4-0tS" id="fkj-Br-q9I"/>
                         <outlet property="sceneView" destination="4U3-DB-gNv" id="TCp-Ft-Thl"/>
                     </connections>
                 </viewController>
